@@ -8,7 +8,7 @@ def artifactVersion = "${artifactory_version}"
 publishing {
     publications {
         aar(MavenPublication) {
-            groupId = "${artifactory_groudid}"
+            groupId = "${artifactory_groupid}"
             artifactId project.name
             version = artifactVersion
             artifact "${project.buildDir}/outputs/aar/${project.name}-release.aar"
